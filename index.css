@@ -1,0 +1,39 @@
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 20em auto 200px;
+	grid-template-rows: auto;
+	grid-gap: 1em;
+	grid-template-areas: "header header header"
+						 "left article right"
+						 "footer footer footer"
+}
+
+.header,
+.footer,
+.article, 
+.sidebar-left, 
+.sidebar-right {
+	background: #ccc;
+	padding: 1em;
+}
+
+.header {
+	grid-area: header;
+}
+
+.sidebar-left {
+	grid-area: left;
+}
+
+.sidebar-right {
+	grid-area: right;
+}
+
+.article {
+	grid-area: article;
+}
+
+.footer {
+	grid-area: footer;
+}
